@@ -1,0 +1,33 @@
+{% extends './base.html' %}
+{% block titles%}{{doctors.full_name}}-View Doctors{%endblock %}
+{% block content %}
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <img src="/media/{{doctors.image}}" width="240px" height="300px">
+            </div>
+            <!-- <div class="row"> -->
+               <a href="/consultationform"> <button class="btn btn-primary mx-3">Make Appointment</button></a>
+                <button class="btn btn-primary">Online Consultation</button>
+                
+
+            <!-- </div> -->
+        </div>
+
+        <div class="col-md-8">
+            <h5>{{doctors.full_name}}</h5>
+            <p>{{doctors.description}}</p>
+            <p><b>Department= </b>{{doctors.department}}</p>
+            <p><b>NMC No= </b>{{doctors.nmc_number}}</p>
+            <p><b>Qualification = </b>{{doctors.qualification_name}}</p>
+            <p><b>O.P.D Schedule= </b>Sun-Fri({{doctors.shift_start_time}} to {{doctors.shift_end_time}})</p>
+            <p><b>Education & Trainings</b>{{doctors.education_training}}</p>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

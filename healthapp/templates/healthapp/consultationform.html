@@ -1,0 +1,113 @@
+{% extends './base.html' %}
+
+{% block content %}
+  <!--------------------------- Form Section ---------------------------->
+  <div class="formbold-main-wrapper">
+    
+    <div class="formbold-form-wrapper">
+      <form class="form-card" action="/consultationform/" method="POST">{% csrf_token %}
+        <div class="formbold-mb-5">
+          <label for="name" class="formbold-form-label"> Full Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            class="formbold-form-input"
+          />
+        </div>
+        <div class="formbold-mb-5">
+          <label for="phone" class="formbold-form-label"> Phone Number: </label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            class="formbold-form-input"
+          />
+        </div>
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label"> Email Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="formbold-form-input"
+          />
+        </div>
+        <div class="formbold-mb-5">
+          <label for="phone" class="formbold-form-label"> Appointment </label>
+          <select id="department" name="department" class="formbold-form-input" required>
+            <option value="">Select</option>
+            <option value="department1">Department 1</option>
+            <option value="department2">Department 2</option>
+            <option value="department3">Department 3</option>
+          </select>
+        </div>
+        <div class="flex flex-wrap formbold--mx-3">
+          <div class="w-full sm:w-half formbold-px-3">
+            <div class="formbold-mb-5 w-full">
+              <label for="date" class="formbold-form-label"> Date </label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                class="formbold-form-input"
+              />
+            </div>
+          </div>
+          <div class="w-full sm:w-half formbold-px-3">
+            <div class="formbold-mb-5">
+              <label for="time" class="formbold-form-label"> Time </label>
+              <input
+                type="time"
+                name="time"
+                id="time"
+                class="formbold-form-input"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="formbold-mb-5 formbold-pt-3">
+          <label class="formbold-form-label formbold-form-label-2">
+            Address Details
+          </label>
+          <div class="flex flex-wrap formbold--mx-3">
+           
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Enter city"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Enter state"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+  
+        <div>
+          <button class="formbold-btn">Book Appointment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  {% endblock content %}
+  

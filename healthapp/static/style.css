@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.container {
+    max-width: unset;
+    max-height: max-content;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #19A7CE, #146C94);
+    padding: 0;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    float: right;
+
+}
+
+.nav-item li a:focus,
+.nav-tem li a:hover {
+    color: rgb(145, 24, 24);
+
+}
+
+ul .dropdown-menu {
+    position: absolute;
+    background-color: #4f48cf;
+    margin: 0px;
+    padding: 0px;
+    width: 300;
+
+}
+
+li .nav-item {
+    border-right: #6b7280;
+}
+
+
+li .dropdown-item:hover {
+
+    color: white;
+    background-color: #1796BE;
+    border-bottom: #6b7280;
+}
+
+
+
+/* .dropdown-menu li {
+    background-color: #30cd67;
+    margin: 0px;
+    padding: 0px;
+} */
+
+.navbar-toggler-icon {
+    outline: none !important;
+    ;
+}
+
+#banner {
+    background-image: linear-gradient(to right, #19A7CE, #146C94);
+    color: white;
+    padding-top: 5%;
+    width: 100%;
+    height: 750px;
+}
+
+.My-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.btn {
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #4f48cf);
+}
+
+.bottom-img {
+    width: 100%;
+    padding-top: 65px;
+}
+
+#banner .btn-primary {
+    background-color: #4f48cf;
+    border-color: #4f48cf;
+}
+
+#banner .btn-primary:hover {
+    background-color: #1796BE;
+    border-color: #1796BE;
+}
+
+#banner .banner-softbox {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: rgba(68, 65, 65, 0.35) 0px 5px 15px;
+    margin-left: 90px;
+    margin-right: 70px;
+
+}
+
+.row {
+    display: flex;
+}
+
+#banner .side-nav {
+    position: relative;
+
+
+    /* border-radius: 27px;
+width: 50px;
+height: 250px; */
+    justify-content: center;
+}
+
+.side-nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.side-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------------------- Service Section ----------------------------- */
+#services {
+    padding: 80px 0;
+}
+
+.service-img {
+    width: 110px;
+    height: 90px;
+    margin-top: 20px;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.title::before {
+    content: '';
+    background: #146C94;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.title::after {
+    content: '';
+    background: #146C94;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+
+#services .btn-primary {
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4f48cf;
+
+}
+
+#services .btn-primary:hover {
+    background-color: #1796BE;
+}
+
+/* ------------------Testimonial Section ------------------ */
+#testimonials {
+    margin: 100px 0;
+}
+
+.testimonials {
+    border-left: 4px solid #146C94;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.testimonials img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/*------------------- Social Media Section ----------------*/
+#social-media {
+    background: #f8f9fa;
+    padding: 100px 0px;
+}
+
+#social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.social-icons img {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover img {
+    transform: translateY(-10px);
+}
+
+/* -------------------Footer Section -------------------- */
+#footer {
+    background-image: linear-gradient(to right, #19A7CE, #146C94);
+    color: white;
+}
+
+.footer-img {
+    width: 100%;
+}
+
+.footer-box {
+    padding: 20px;
+}
+
+.footer-box img {
+    width: 25px;
+    margin-bottom: 20px;
+
+}
+
+.footer-box .fa {
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #19A7CE, #146C94);
+}
+
+.footer-box .form-control {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn-primary {
+    box-shadow: none !important;
+    border: none;
+    border: radius 5px;
+    ;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #4F48CF;
+}
+
+hr {
+    background-color: white;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/**************************Form Area***************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.formbold-mb-5 {
+    margin-bottom: 20px;
+}
+
+.formbold-pt-3 {
+    padding-top: 12px;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+}
+
+.formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+}
+
+.formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input:focus {
+    border-color: #4f48cf;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #4f48cf;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-full {
+    width: 100%;
+}
+
+@media (min-width: 540px) {
+    .sm\:w-half {
+        width: 50%;
+    }
+}
+
+/**********************Modal******************/
+.btn-close {
+    font-size: 20px;
+
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #19A7CE, #146C94);
+
+}
+
+.formbold-form-head-label {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+
+
+
+
+/******************Our Services page*****************/
+
+
+/****************Blog page***********************/
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+
+}
+
+@media (min-width: 30em) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 60em) {
+    .band {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+}
+
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width: 60em) {
+    .item-1 {
+        grid-column: 1 / span 2;
+    }
+
+    .item-1 h1 {
+        font-size: 24px;
+    }
+}
+
+* Our doctors page Css */ .carousel-item {
+    flex-direction: column;
+
+}
+
+.col-md-3 {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+
+.col-md-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background:#146C94;
+    padding: 3px;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid#fff;
+}
+
+.card-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 15px;
+    text-align: center;
+}
+
+.button {
+    margin-left: 30px;
+}
+
+.btn-primary {
+    background-color: #146C94;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #265DF2;
+}
+
+.content {
+    background-image: linear-gradient(to right, #19A7CE, #146C94);
+
+    border-radius: 0 0 0 25px;
+}
+
+.content::before,
+.content::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom:174.3px;
+    right:0;
+    background-color:#fff;
+    border-radius: 0 25px 0 0;
+}
+.content::before{
+    border-radius: 0 0 0 0;
+    background-color: #146C94;
+}
+
+.carousel-control-prev-icon {
+    background: black no-repeat center center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background: black no-repeat center center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+
+}
+
+body .carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-indicators .active {
+    background-color: blue;
+}
+
+button.carousel-control-prev,
+button.carousel-control-next {
+    top: auto;
+    bottom: auto;
+    padding-top: 200px;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}

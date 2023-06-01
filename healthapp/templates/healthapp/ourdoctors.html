@@ -1,0 +1,86 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<!-- <section id="ourdoctors"> -->
+<div class="container text-center">
+  {% for doctor, range, nSlides in allDocs %}
+ <h1 class="title">{{doctor.0.department}} </h1>
+  <div class="row">
+    <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-bs-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-bs-target="#demo{{forloop.counter}}" data-bs-slide-to="0" class="active"></li>
+        {% for i in range %}
+        <li data-bs-target="#demo{{forloop.parentloop.counter}}" data-bs-slide-to="{{i}}"></li>
+        {% endfor %}
+      </ul>
+
+      <!--        slideshow starts here-->
+
+      <div class="carousel-inner no-padding">
+        <div class="carousel-item active">
+
+          {% for i in doctor %}
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <div class="content">
+                <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{i.full_name}}</h5>
+                <p class="card-text">
+                  <b>Qualification: </b>{{i.qualification_name}}<br>
+                 <b> NMC No: </b>{{i.nmc_number}}<br>
+                 <b>O.P.D Schedule: </b>Sun-Fri({{i.shift_start_time}}--{{i.shift_end_time}})
+                </p>
+                <div class="button">
+                 <a href="/docview/{{i.id}}"> <button id="{{i.id}}"  class="btn btn-primary view">View Profile</button></a>
+                 <a href="/consultationform"><button class="btn btn-primary">Book</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+        </div>
+        <div class="carousel-item">
+          {% endif%}
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- left and right controls for the slide -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo{{forloop.counter}}" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <!-- <span class="visually-hidden">Previous</span> -->
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo{{forloop.counter}}" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <!-- <span class="visually-hidden">Next</span> -->
+    </button>
+  </div>
+  {% endfor %}
+
+</div>
+
+
+
+
+{% endblock content %}
+
+
+
+{%block js%}
+<script>
+  console.log('working');
+
+  $('.view').click(function() {
+    console.log('clicked');
+    var idstr = this.id.toString();
+    console.log(idstr);
+  });
+</script>
+{%endblock%}
