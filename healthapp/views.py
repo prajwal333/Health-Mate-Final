@@ -29,13 +29,6 @@ def ourdoctors(request):
         allDocs.append([doc, range(1, nSlides), nSlides])
     params = {'allDocs': allDocs}
     return render(request, 'healthapp/ourdoctors.html', params)
-    # doctors = doctor.objects.all()
-    # n = len(doctors)
-    # nSlides = n//4 + ceil((n/4) + (n//4))
-    # #   params={'no_of_slides':nSlides, 'range':range(1,nSlides), 'doctor': doctors}
-    # allDocs = [[doctors, range(1, nSlides), nSlides], [
-    #     doctors, range(1, nSlides), nSlides]]
-    # params = {'allDocs': allDocs}
 
 
 def Consultationform(request):
