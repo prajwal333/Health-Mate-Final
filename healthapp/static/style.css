@@ -79,9 +79,10 @@ li .dropdown-item:hover {
 #banner {
     background-image: linear-gradient(to right, #19A7CE, #146C94);
     color: white;
-    padding-top: 5%;
+
     width: 100%;
-    height: 750px;
+
+
 }
 
 .My-title {
@@ -98,7 +99,8 @@ li .dropdown-item:hover {
 
 .bottom-img {
     width: 100%;
-    padding-top: 65px;
+
+
 }
 
 #banner .btn-primary {
@@ -110,7 +112,6 @@ li .dropdown-item:hover {
     background-color: #1796BE;
     border-color: #1796BE;
 }
-
 #banner .banner-softbox {
     border-radius: 50px;
     background: #ffffff;
@@ -632,3 +633,31 @@ button.carousel-control-next {
     padding-left: 0;
     padding-right: 0;
 }
+
+
+/* login button */
+.log {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
+
+
+  .log {
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(104, 85, 224, 1);
+  }
+
+  .log:hover {
+    color: white;
+
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
+  }

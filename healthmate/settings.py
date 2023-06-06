@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'healthapp.apps.HealthappConfig'
+    'healthapp.apps.HealthappConfig',
+    'doctorapp.apps.DoctorappConfig'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'healthmate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/healthapp'],
+        'DIRS': ['templates/healthapp','templates/doctorapp'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

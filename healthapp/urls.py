@@ -8,6 +8,7 @@ urlpatterns = [
     path("", views.index, name="healthapp"),
     path("about/", views.about, name="AboutUs"),
     path("ourdoctors/", views.ourdoctors, name="ourdoctors"),
+    path("ourservices/", views.ourservices, name="ourservices"),
     path("consultationform/", views.Consultationform, name="consultation"),
     path("blog/", views.blog, name="blog"),
     path("docview/<int:myid>",views.docview,name='ViewDoctorsProfile'),

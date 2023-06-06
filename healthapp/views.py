@@ -21,6 +21,9 @@ def index(request):
 def about(request):
     return render(request, 'healthapp/about.html')
 
+def ourservices(request):
+    return render(request, 'healthapp/ourservices.html')
+
 
 def ourdoctors(request):
     allDocs = []
