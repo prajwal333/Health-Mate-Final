@@ -10,5 +10,6 @@ urlpatterns = [
     path("ourdoctors/", views.ourdoctors, name="ourdoctors"),
     path("consultationform/", views.Consultationform, name="consultation"),
     path("blog/", views.blog, name="blog"),
-    path("docview/<int:myid>",views.docview,name='ViewDoctorsProfile')
+    path("docview/<int:myid>",views.docview,name='ViewDoctorsProfile'),
+    path("login/", views.login, name="login")
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

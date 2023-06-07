@@ -71,3 +71,6 @@ def docview(request,myid):
     doc= doctor.objects.filter(id=myid)
 
     return render(request, 'healthapp/docview.html',{'doctors':doc[0]})
+
+def login(request):
+    return render(request, 'healthapp/login.html')

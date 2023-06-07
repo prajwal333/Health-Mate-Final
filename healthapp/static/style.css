@@ -74,7 +74,7 @@ li .dropdown-item:hover {
 
 .navbar-toggler-icon {
     outline: none !important;
-    ;
+    
 }
 
 #banner {
@@ -665,4 +665,12 @@ button.carousel-control-next {
     background-color: rgba(104, 85, 224, 1);
   }
   
-/**************Login End***************/  
+/**************Login-button End***************/  
+
+/**************shadow-box***************/ 
+.shadowbox {
+    border-radius: 36px;
+    background: #ffffff;
+    box-shadow:  8px 8px 19px #dedede,
+                 -8px -8px 19px #ffffff;
+} 
