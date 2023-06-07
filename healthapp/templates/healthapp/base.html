@@ -73,10 +73,10 @@
               </ul>
             </li>
             {% else %}
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+            <!-- <button type="button" class="log" data-bs-toggle="modal" data-bs-target="#signupModal">
               Signup
-            </button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+            </button> -->
+            <button type="button" class="log" data-bs-toggle="modal" data-bs-target="#loginModal">
               Login
             </button>
             {% endif %}
@@ -100,10 +100,10 @@
   <nav class="sidebar">
     <a id="nav-el" class="active" href="/./">
       <i class="bi bi-grid"></i></a>
-
+  
     <a id="nav-el" href="#about">
       <i class="bi bi-search"></i>
-
+  
     </a>
     <a id="nav-el" href="#experience">
       <i class="bi bi-chat-dots"></i></a>
@@ -261,7 +261,7 @@
             
             {% csrf_token %}
             <button type="submit" class="btn btn-primary">Submit</button>
-             <p style="text-align: center"class="message">Not registered? <a href="#">Create an account</a></p>
+             <p style="text-align: center"class="message">Not registered? <a href="" data-bs-toggle="modal" data-bs-target="#signupModal">Create an account</a></p>
           </form>
         </div>
       </div>
